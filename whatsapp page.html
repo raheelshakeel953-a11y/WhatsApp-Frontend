@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Overall Page */
+body {
+    background-color: #f5f7fa;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 30px;
+}
+
+header p {
+    font-size: 26px;
+    color: #25d366;
+}
+header i{
+    color: #25d366;
+}
+
+header button {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #25d366;
+    border-radius: 40px;
+    height: 40px;
+    border: none;
+    color: white;
+    transition: 0.3s;
+}
+
+header button:hover {
+    background-color: #111b11;
+}
+
+/* ✅ Hero Section (Same Style as WhatsApp Web Section) */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+    margin: 15px auto;
+    background-color: white;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero p {
+    font-size: 18px;
+    font-weight: 100;
+    width: 60%;
+    line-height: 1.6;
+}
+
+.hero span {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: large;
+}
+  
+
+
+.hero button {
+    background-color: #25d366;
+    color:#111b11;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 12px 24px;
+    border: 1px solid;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hero i{
+   color: #111b11;
+}
+
+.hero button:hover {
+    background-color: #128c7e;
+}
+
+/* WhatsApp Web Section */
+.whatsapp-home {
+    width: 100%;
+    min-height: 100vh;
+    
+}
+
+.list { 
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.left-content {
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    width: 55%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.inner-left-content span {
+    margin-top: 10px; 
+    font-weight: 600;
+   font-size: 30px;
+   
+    
+}
+
+.inner-left-content p {
+    font-size: 16px;
+    margin-bottom: 16px; 
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.inner-left-content ol {
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.inner-left-content ol li {
+    margin-bottom: 10px;
+}
+
+.inner-left-content ol li i {
+    background-color:  #e0dddd;
+    color: #201d1d;
+    padding: 4px;
+    border-radius: 20%;
+    margin-left: 5px;
+}
+
+.links {
+       margin-top: 20px;
+       padding-top: 30px;
+}
+
+.links a {
+    border-bottom: 2px solid black;
+    width: 60%;
+    margin-top: 15px;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 3px;
+}
+
+.links a:hover {
+    color: #25d366;
+}
+
+.links a i {
+    margin-left: 5px;
+}
+
+.inner-right-content {
+    margin-left: 40px;
+    text-align: center;
+}
+.inner-right-content a{
+     color: #0c0d0d;
+}
+.inner-right-content a:hover {
+    color: #25d366;
+}
+
+.inner-right-content img {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    padding-bottom: 50px;
+    color: #333;
+}
+
+.footer p{
+    margin-right: 5px;
+   font-size: large;
+}
+.footer a{
+     color: black;
+}
+.footer a:hover {
+    color: #25d366;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <p><i class="fa-brands fa-whatsapp"></i> WhatsApp</p>
+    </header>
+
+    <!--  Hero Section -->
+    <section id="download" class="hero">
+        <p>
+            <span><i class="fa-solid fa-laptop"></i> Download WhatsApp for Windows</span>
+              Make calls, share your screen, and get a faster experience when you download the Windows app.</p>
+        <div class="btn">
+                    <button>Download <i class="fa-solid fa-download"></i></button>
+      </div>
+    </section>
+
+    <!-- WhatsApp Web Section -->
+    <section class="whatsapp-home">
+        <div class="list">
+            <div class="left-content">
+                <div class="inner-left-content">
+                    <span> Steps to Log in </span>                
+                   <ol>
+                        <li>Open WhatsApp <i class="fa-brands fa-whatsapp"></i> on your phone.</li>
+                        <li>On Android tap Menu <i class="fa-solid fa-ellipsis-vertical"></i>  on iPhone tap Settings <i class="fa-solid fa-gear"></i></li>
+                        <li>Tap Linked Devices, then Link Device</li>
+                        <li>Scan the QR to comfirm</li>
+                    </ol>
+
+                    <div class="links">
+                               <input type="checkbox">
+                               <label> Stay logged in on this browser</label>
+                    </div>
+                </div>
+
+                <div class="inner-right-content">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.475sj6R0A1guhH7edkpWhQHaHa&pid=Api&P=0&h=220" alt="QR Code">
+                    <br>
+                    <a href="#">Log in with phone number <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p> Don't hava a WhatsApp account? <a href="./getstarted.html">Get started <i class="fa-solid fa-up-right-from-square"></i></a></p>
+        </div>
+    </section>
+</body>
+</html>
